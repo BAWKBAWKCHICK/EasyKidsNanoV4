@@ -1,7 +1,7 @@
 int SpeedL = 0 ;
 int SpeedR = 0 ;
 
-void Motor(int L , int R)
+void motor(int L , int R)
 {
     pinMode(3, OUTPUT);
     pinMode(4, OUTPUT);
@@ -54,7 +54,7 @@ void Motor(int L , int R)
     }
 }
 
-void MotorStop()
+void motorStop()
 {
     analogWrite(5, 255);
     analogWrite(6, 255);

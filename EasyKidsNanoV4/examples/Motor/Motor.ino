@@ -2,17 +2,17 @@
 
 void setup()
 {
-  
+  Serial.begin(9600);
 }
 
 void loop()
 {
-  Motor(100,100); //-----Motor(Speedleft,Speedright)-----//
+  motor(100,100); //-----Motor(Speedleft,Speedright)-----//
   delay(1000);
-  Motor(-100,-100);
+  motor(-100,-100);
   delay(1000);
-  Motor(100,0);
+  motor(100,0);
   delay(1000);
-  Motor(0,100);
+  motor(0,100);
   delay(1000);
 }
