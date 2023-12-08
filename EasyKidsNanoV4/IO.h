@@ -7,17 +7,6 @@
 #define Analog5 A5
 #define Analog6 A6
 
-void IO_Setup()
-{
-    pinMode(A0, INPUT);
-    pinMode(A1, INPUT);
-    pinMode(A2, INPUT);
-    pinMode(A3, INPUT);
-    pinMode(A4, INPUT);
-    pinMode(A5, INPUT);
-    pinMode(A6, INPUT);
-}
-
 int analog(int pin) //-----AnalogRead-----//
 {
     if (pin == 0)pin = A0;
@@ -39,6 +28,7 @@ int digital(int pin) //-----DigitalRead-----//
     else if (pin == 4)pin = A4;
     else if (pin == 5)pin = A5;
     else if (pin == 6)pin = A6;
+    pinMode(pin, INPUT);
     return digitalRead(pin);
 }
 

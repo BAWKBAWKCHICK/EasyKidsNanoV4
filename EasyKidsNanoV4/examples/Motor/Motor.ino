@@ -1,8 +1,8 @@
-#include <EasyNano V.4.h>
+#include <EasyKidsNanoV4.h>
 
 void setup()
 {
-  EasyKidsNano_Setup();
+  
 }
 
 void loop()

@@ -1,9 +1,7 @@
-#include <EasyNano V.4.h>
+#include <EasyKidsNanoV4.h>
 
 void setup()
 {
-  EasyKidsNano_Setup();
-
   Button_Start(); //-----WaitForStart-----//
 }
 
